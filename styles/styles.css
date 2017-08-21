@@ -131,6 +131,12 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .project-label-purple{
     background: #dabfde;
 }
+.project-label-lightblue{
+    background: #dabfde;
+}
+.project-label-lazyred{
+    background: #cd5c5c;
+}
 
 
 @media only screen and (min-width: 768px) {
