@@ -12,3 +12,7 @@ In brief, you will:
 - push your branch and submit a pull-request for it;
 - go through the review process until your pull-request is merged; and
 close your issue.
+
+You can email us to **99xt@googlegroups.com** if you have something to discuss further.
+ 
+ 
