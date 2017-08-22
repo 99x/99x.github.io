@@ -111,6 +111,8 @@ var renderPage = function(data) {
             "JavaScript": "blue",
             "C": "orange",
             "Mobile": "yellow",
+            "PHP" : "lightblue",
+            "C#" : "lazyred",
             "Other": "purple"
         }
         return '<span class="label project-label-' + languageMap[language] + '">' + language + '</span>';
@@ -145,7 +147,7 @@ var renderPage = function(data) {
             '<p class="size hidden">' + item.size + '</p>' +
             '<p class="forks hidden">' + item.forks + '</p>' +
             '<p class="watchers hidden">' + item.watchers_count + '</p>' +
-            '<div class="proj-disc">' + item.description + '</div>' +
+            '<div class="proj-disc">' + (item.description==null?"<em>No additional description.</em>":item.description) + '</div>' +
             buildLanguageLabel(language) +
             '</div>';
         var doc;
@@ -233,7 +235,7 @@ var renderPage = function(data) {
     });
 }
 
-$.getJSON(window.location.origin+"/config.json", function(config) {
+$.getJSON("config.json", function(config) {
     $.ajax({
         dataType: 'json',
         url: 'https://api.github.com/orgs/' + config.git_org_name + '/repos?page=1&per_page=100&callback=?',
