@@ -145,15 +145,15 @@ var renderPage = function(data) {
         }
         var category = getCategory(item.name);
         isotopeData +=
-            '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 item-container"><div class="item ' + category.toLowerCase() + " " + language + ' col-lg-12 col-md-12 col-sm-12 col-xs-12">' +
-            '<h3 class="col-lg-12 name">' + item.name + '</h3>' +
+            '<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 item-container"><div class="item ' + category.toLowerCase() + " " + language + '">' +
+            '<h3 class="name">' + item.name + '</h3>' +
             '<button class="btn_git btn-with-count js-toggler-target"> ' + '<i class="icon-star"></i>' + item.stargazers_count + ' Stars </button>&nbsp' +
             '<button class="btn_git btn-with-count js-toggler-target">' + '<i class="icon-fork"></i>' + item.forks + ' Forks </button>' +
             '<p class="size hidden">' + item.size + '</p>' +
             '<p class="forks hidden">' + item.forks + '</p>' +
             '<p class="watchers hidden">' + item.watchers_count + '</p>' +
-            '<p class="col-lg-12 proj-disc">' + (item.description==null ? "<em>No additional description</em>" : item.description) + '</p>' +
-            '<div class="col-lg-12 language-tags">' +
+            '<p class=" proj-disc">' + (item.description==null ? "<em>No additional description</em>" : item.description) + '</p>' +
+            '<div class=" language-tags">' +
             buildLanguageLabel(language) +
             '</div>' +
             '</div></div>';
@@ -306,10 +306,9 @@ function renderOrgEvents(data) {
             break;
         }
 
-        $("#organization-repo-events").append("<div class='col-lg-12 organization-repo-event'>" +
-             "<div class='col-lg-12 activity-title'>" + title + "</div>" +
-            "<div class='col-lg-12 activity-description'>" + description + "</div>" +
-            "<div class='col-lg-12 text-right activity-footer'>" + timeStamp + "</div>"+
+        $("#organization-repo-events").append("<div class='organization-repo-event'>" +
+             "<div class='activity-title'>" + title + "</div>" +
+            "<div class='tiledate'>" + timeStamp + "</div>"+
         "</div>");
     });
 }
