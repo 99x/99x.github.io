@@ -1,2 +1,1 @@
-Great! This is the right place. Check out the other questions and 
-most importantly the projects page.
+Great! This is the right place. Please go through the other frequently asked questions as well.
