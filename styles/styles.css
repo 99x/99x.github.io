@@ -105,7 +105,7 @@ hr{
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url('/images/gears.gif') no-repeat center center;
+  background: #fff url('../images/gears.gif') no-repeat center center;
 }
 
 .btn_git {
@@ -188,6 +188,9 @@ hr{
 }
 .project-label-tomato{
     background: #ff6347;
+}
+.project-label-dodgerblue{
+    background: #1e90ff;
 }
 
 
