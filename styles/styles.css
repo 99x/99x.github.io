@@ -22,18 +22,23 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
+    padding: 10px;
 }
 
-.col-lg-4.col-md-6.col-sm-12.col-xs-12.item-container {
-  padding: 5px;
+.item-container {
+  padding: 10px;
 }
 
 .item:hover {
-  box-shadow: inset 0 0 0 4px #666, 0 0 1px rgba(0,0,0,0);
+  box-shadow: inset 0 0 0 4px #ea6528, 0 0 1px rgba(0,0,0,0);
 }
 
 .item .name {
   overflow-wrap: break-word;
+}
+
+.name{
+    margin-top: 0px;
 }
 
 .main-container {
@@ -54,6 +59,17 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-size: 17px;
   font-family: Helvetica;
   color: white;
+}
+
+hr{
+    width: 50px;
+    height: 3px;
+    background: #ea6528;
+    margin: 6px 0px 17px 0px;
+}
+
+.title_sub{
+    margin-bottom: 15px;
 }
 
 .hero-unit {
@@ -199,7 +215,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   border-bottom: 1px solid #eeeeee;
   padding: 3px;
   margin-top: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
+    .tiledate{
+        
+    }
 }
 
 .time-stamp {
@@ -241,3 +260,42 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 10px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
